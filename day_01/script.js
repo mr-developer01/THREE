@@ -14,8 +14,8 @@ const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true 
 const cube = new THREE.Mesh(geometry, material);
 
 cube.scale.x = 6
-cube.rotation.z = 0.2
-cube.position.x = 3
+// cube.rotation.z = 0.2
+// cube.position.x = 1
 
 scene.add(cube);
 
@@ -26,11 +26,14 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 
 function animate() {
-    window.requestAnimationFrame(animate)
+    // window.requestAnimationFrame(animate)
     cube.rotation.x += 0.04
+    
+    // cube.position.x -= 0.1
     // cube.rotation.y += 0.01
     // cube.rotation.z += 0.01
     renderer.render(scene, camera);
 }
 
-animate()
+// animate()
+renderer.setAnimationLoop( animate);
