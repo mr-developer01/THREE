@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planet</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="">
+  <div class="w-full h-screen overflow-hidden bg-slate-900">
+    <div class="w-full h-screen absolute top-0 left-0 z-10 ">
+      <nav class="w-full flex justify-between items-center font-['MONTSERRAT'] px-8 py-4">
+        <h1 class="text-white max-lg:text-[3vw] text-2xl font-bold">Get-Property</h1>
+        <div class="flex space-x-6 px-4">
+          <a href="#" class="text-white max-lg:text-[2vw]">Home</a>
+          <a href="#" class="text-white max-lg:text-[2vw]">Duplex</a>
+          <a href="#" class="text-white max-lg:text-[2vw]">Bunglow</a>
+          <a href="#" class="text-white max-lg:text-[2vw]">Decor</a>
+        </div>
+      </nav>
+      <div class="w-full flex items-center justify-center text-white mt-10">
+        <div class="text-center">
+          <div class="h-[7vw] overflow-hidden">
+            <h1 class="heading h-full max-lg:text-[5vw] text-[4vw] font-['Bellina'] font-medium tracking-widest">... Building-1 ...
+            </h1>
+            <h1 class="heading h-full max-lg:text-[5vw] text-[4vw] font-['Bellina'] font-medium tracking-widest">... Building-2 ...
+            </h1>
+            <h1 class="heading h-full max-lg:text-[5vw] text-[4vw] font-['Bellina'] font-medium tracking-widest">... Building-3
+              ...
+            </h1>
+            <h1 class="heading h-full max-lg:text-[5vw] text-[4vw] font-['Bellina'] font-medium tracking-widest">... Building-4 ...
+            </h1>
+          </div>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="w-full h-px bg-gradient-to-r from-transparent via-white to-transparent my-6"></div>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas" class="w-full h-screen absolute top-0 left-0 z-0"></canvas>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
