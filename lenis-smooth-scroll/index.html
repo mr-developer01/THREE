@@ -1,23 +1,63 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lenis Smooth Scroll</title>
-  </head>
-  <body>
-    <div class="w-full text-white">
-      <div class="w-full h-screen flex items-center justify-center bg-zinc-900">
-        <h1 class="text-4xl font-bold">First Section</h1>
-      </div>
-      <div class="w-full h-screen flex items-center justify-center bg-zinc-900">
-        <h1 class="text-4xl font-bold">Second Section</h1>
-      </div>
-      <div class="w-full h-screen flex items-center justify-center bg-zinc-900">
-        <h1 class="text-4xl font-bold">Third Section</h1>
-      </div>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenis Smooth Scroll</title>
+</head>
+
+<body>
+  <div class="w-full bg-zinc-900">
+    <div class="grid grid-cols-8 grid-rows-20 gap-4">
+      <!-- Row 1 -->
+      <div class="aspect-square" style="--r: 1; --c: 3;"><img src="https://picsum.photos/200?random=1" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 4; --c: 2;"><img src="https://picsum.photos/200?random=2" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 2; --c: 7;"><img src="https://picsum.photos/200?random=3" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 7; --c: 5;"><img src="https://picsum.photos/200?random=4" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 3; --c: 1;"><img src="https://picsum.photos/200?random=5" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 9; --c: 6;"><img src="https://picsum.photos/200?random=6" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 5; --c: 4;"><img src="https://picsum.photos/200?random=7" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 8; --c: 8;"><img src="https://picsum.photos/200?random=8" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 6; --c: 2;"><img src="https://picsum.photos/200?random=9" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 10; --c: 7;"><img src="https://picsum.photos/200?random=10" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 2; --c: 3;"><img src="https://picsum.photos/200?random=11" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 4; --c: 5;"><img src="https://picsum.photos/200?random=12" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 7; --c: 1;"><img src="https://picsum.photos/200?random=13" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 9; --c: 8;"><img src="https://picsum.photos/200?random=14" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 1; --c: 4;"><img src="https://picsum.photos/200?random=15" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 3; --c: 6;"><img src="https://picsum.photos/200?random=16" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 5; --c: 2;"><img src="https://picsum.photos/200?random=17" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 8; --c: 7;"><img src="https://picsum.photos/200?random=18" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 10; --c: 3;"><img src="https://picsum.photos/200?random=19" alt="Random image"
+          class="w-full h-full object-cover"></div>
+      <div class="aspect-square" style="--r: 6; --c: 5;"><img src="https://picsum.photos/200?random=20" alt="Random image"
+          class="w-full h-full object-cover"></div>
+  </div>
+  <div class="fixed w-full h-screen flex flex-col items-center justify-center top-0 left-0 font-['Helvetica']">
+    <h1 class="text-4xl font-bold text-white mb-4">Welcome to Smooth Scroll</h1>
+    <h2 class="text-2xl text-white">Powered by Lenis</h2>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
