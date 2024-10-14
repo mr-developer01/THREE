@@ -154,7 +154,7 @@ function animate() {
   requestAnimationFrame(animate);
   // Rotate each sphere on its own axis
   spheres.children.forEach((sphere) => {
-    // sphere.rotation.y = clock.getElapsedTime() * 0.002; // Adjust the rotation speed as needed
+    sphere.rotation.y = clock.getElapsedTime() * 0.1; // Adjust the rotation speed as needed
   });
 //   controls.update();
   renderer.render(scene, camera);
