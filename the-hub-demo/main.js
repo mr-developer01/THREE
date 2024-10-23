@@ -1,3 +1,4 @@
+import {renderCalendar} from "./calander"
 const vedioCard = document.querySelectorAll(".vedio-card");
 const vedioTitle = document.querySelector(".video-title");
 const titleDescription = document.querySelector(".title-description");
@@ -25,3 +26,5 @@ vedioCard.forEach((vedio) => {
   });
   console.log(vedio);
 });
+
+renderCalendar()
