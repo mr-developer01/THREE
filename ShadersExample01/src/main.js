@@ -18,10 +18,20 @@ camera = new THREE.PerspectiveCamera(
 camera.position.z = 5;
 
 let geometry = new THREE.PlaneGeometry(4, 1.8, 100, 100);
+console.log(geometry);
+
+const textureLoader = new THREE.TextureLoader();
+const texture = textureLoader.load('https://as2.ftcdn.net/v2/jpg/08/70/08/07/1000_F_870080788_NUdBskCScN5hZb67CgAXGNyBglNgyO9I.jpg');
+
 let material = new THREE.ShaderMaterial({
-    wireframe: true,
+    // wireframe: true,
     vertexShader: vertex,
     fragmentShader: fragment,
+    side: THREE.DoubleSide,
+    uniforms: {
+      uTime: {value: 0},
+      uTexture: { value: texture }
+    }
 });
 let cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
@@ -47,6 +57,7 @@ window.addEventListener("resize", onWindowResize, false);
 
 function animate() {
   requestAnimationFrame(animate);
+  material.uniforms.uTime.value += 0.02
   controls.update();
   renderer.render(scene, camera);
 }
